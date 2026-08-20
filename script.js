@@ -13,8 +13,7 @@ while(x < 16)
     x++;
 }
 
-/*
-while(y < 15)
+/*while(y < 15)
 {
     const line = document.createElement("div");
     let columns = document.querySelectorAll(".col");

@@ -32,3 +32,11 @@ while(y < 16)
     z = 0;
     y++;
 }
+
+let div = document.querySelectorAll("div");
+
+div.forEach((item) => {
+    item.addEventListener("mouseenter", function(e){
+        e.target.style.backgroundColor = "blue";
+    })
+});

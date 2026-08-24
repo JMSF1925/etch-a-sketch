@@ -7,8 +7,8 @@ while(x < 16)
 {
     const col = document.createElement("div");
     col.classList.add("col")
-    col.textContent = "DIV";
-    col.style.color = "white";
+    col.style.height = "40px";
+    col.style.width = "40px";
     col.style.backgroundColor = "black";
     grid.appendChild(col);
     x++;
@@ -22,8 +22,8 @@ while(y < 16)
     {
         const line = document.createElement("div");
         line.classList.add("line");
-        line.textContent = "DIV";
-        line.style.color = "white";
+        line.style.height = "40px";
+        line.style.width = "40px";
         line.style.backgroundColor = "black";
         columns.item(y).appendChild(line);
         z++;

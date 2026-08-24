@@ -1,6 +1,7 @@
 const grid = document.querySelector("#grid");
 let x = 0;
 let y = 0;
+let z = 0;
 
 while(x < 16)
 {
@@ -13,16 +14,21 @@ while(x < 16)
     x++;
 }
 
-/*while(y < 15)
+let columns = document.querySelectorAll(".col");
+
+while(y < 16)
 {
-    const line = document.createElement("div");
-    let columns = document.querySelectorAll(".col");
-    line.classList.add("line")
-    line.textContent = "DIV";
-    line.style.color = "white";
-    line.style.backgroundColor = "black";
-    columns.forEach((item) => {
-        item.appendChild(line);
-    });
+    while(z < 15)
+    {
+        const line = document.createElement("div");
+        line.classList.add("line");
+        line.textContent = "DIV";
+        line.style.color = "white";
+        line.style.backgroundColor = "black";
+        columns.item(y).appendChild(line);
+        z++;
+    }
+
+    z = 0;
     y++;
-}*/
+}

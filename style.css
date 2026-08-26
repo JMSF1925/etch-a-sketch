@@ -4,3 +4,11 @@
     max-width: 960px;
     max-width: 960px;
 }
+
+button
+{
+    margin-left: 425px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 70px;
+}

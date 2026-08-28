@@ -51,6 +51,8 @@ button.addEventListener("click", () => {
     z = 0;
     let squares = prompt("How many squares do you want in the grid (per side)?");
     let numericSquares = Number(squares);
+    let squareSize = Math.floor(960 / numericSquares);
+    let strSize = squareSize.toString();
     
     if(Number.isInteger(numericSquares) && numericSquares <= 100)
     {
@@ -62,8 +64,8 @@ button.addEventListener("click", () => {
         {
             const col = document.createElement("div");
             col.classList.add("col");
-            col.style.height = "60px";
-            col.style.width = "60px";
+            col.style.height = strSize + "px";
+            col.style.width = strSize + "px";
             col.style.backgroundColor = "black";
             grid.appendChild(col);
             x++;
@@ -77,8 +79,8 @@ button.addEventListener("click", () => {
             {
                 const line = document.createElement("div");
                 line.classList.add("line");
-                line.style.height = "60px";
-                line.style.width = "60px";
+                line.style.height = strSize + "px";
+                line.style.width = strSize + "px";
                 line.style.backgroundColor = "black";
                 columns.item(y).appendChild(line);
                 z++;

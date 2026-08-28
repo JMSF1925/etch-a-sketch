@@ -36,9 +36,15 @@ while(y < 16)
     y++;
 }
 
-let div = document.querySelectorAll("div");
+let lines = document.querySelectorAll(".line");
 
-div.forEach((item) => {
+columns.forEach((item) => {
+    item.addEventListener("mouseenter", function(e){
+        e.target.style.backgroundColor = "blue";
+    })
+});
+
+lines.forEach((item) => {
     item.addEventListener("mouseenter", function(e){
         e.target.style.backgroundColor = "blue";
     })
@@ -89,6 +95,21 @@ button.addEventListener("click", () => {
             z = 0;
             y++;
         }
+
+        lines = document.querySelectorAll(".line");
+        columns = document.querySelectorAll(".col");
+
+        columns.forEach((item) => {
+            item.addEventListener("mouseenter", function(e){
+                e.target.style.backgroundColor = "blue";
+            })
+        });
+
+        lines.forEach((item) => {
+            item.addEventListener("mouseenter", function(e){
+                e.target.style.backgroundColor = "blue";
+            })
+        });
 
     }
     else if(Number.isInteger(numericSquares) && numericSquares > 100)

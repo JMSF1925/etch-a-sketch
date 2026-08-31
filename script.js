@@ -10,12 +10,14 @@ while(x < 16)
     col.classList.add("col");
     col.style.height = "40px";
     col.style.width = "40px";
+    col.style.maxHeight = "40px";
+    col.style.maxWidth = "40px";
     col.style.backgroundColor = "black";
     col.style.flex = "1";
     grid.appendChild(col);
     x++;
 }
-
+black
 let columns = document.querySelectorAll(".col");
 
 while(y < 16)
@@ -26,6 +28,8 @@ while(y < 16)
         line.classList.add("line");
         line.style.height = "40px";
         line.style.width = "40px";
+        line.style.maxHeight = "40px";
+        line.style.maxWidth = "40px";
         line.style.backgroundColor = "black";
         line.style.flex = "1";
         columns.item(y).appendChild(line);
@@ -40,13 +44,37 @@ let lines = document.querySelectorAll(".line");
 
 columns.forEach((item) => {
     item.addEventListener("mouseenter", function(e){
-        e.target.style.backgroundColor = "blue";
+        colorChoice = Math.floor(Math.random() * 3);
+        if(colorChoice == 0)
+        {
+            e.target.style.backgroundColor = "red";
+        }
+        else if(colorChoice == 1)
+        {
+            e.target.style.backgroundColor = "green";
+        }
+        else
+        {
+            e.target.style.backgroundColor = "blue";
+        }
     })
 });
 
 lines.forEach((item) => {
     item.addEventListener("mouseenter", function(e){
-        e.target.style.backgroundColor = "blue";
+        colorChoice = Math.floor(Math.random() * 3);
+        if(colorChoice == 0)
+        {
+            e.target.style.backgroundColor = "red";
+        }
+        else if(colorChoice == 1)
+        {
+            e.target.style.backgroundColor = "green";
+        }
+        else
+        {
+            e.target.style.backgroundColor = "blue";
+        }
     })
 });
 
@@ -72,6 +100,8 @@ button.addEventListener("click", () => {
             col.classList.add("col");
             col.style.height = strSize + "px";
             col.style.width = strSize + "px";
+            col.style.maxHeight = strSize + "px";
+            col.style.maxWidth = strSize + "px";
             col.style.backgroundColor = "black";
             grid.appendChild(col);
             x++;
@@ -87,6 +117,8 @@ button.addEventListener("click", () => {
                 line.classList.add("line");
                 line.style.height = strSize + "px";
                 line.style.width = strSize + "px";
+                line.style.maxHeight = strSize + "px";
+                line.style.maxWidth = strSize + "px";
                 line.style.backgroundColor = "black";
                 columns.item(y).appendChild(line);
                 z++;
@@ -101,13 +133,37 @@ button.addEventListener("click", () => {
 
         columns.forEach((item) => {
             item.addEventListener("mouseenter", function(e){
-                e.target.style.backgroundColor = "blue";
+                colorChoice = Math.floor(Math.random() * 3);
+                if(colorChoice == 0)
+                {
+                    e.target.style.backgroundColor = "red";
+                }
+                else if(colorChoice == 1)
+                {
+                    e.target.style.backgroundColor = "green";
+                }
+                else
+                {
+                    e.target.style.backgroundColor = "blue";
+                }
             })
         });
 
         lines.forEach((item) => {
             item.addEventListener("mouseenter", function(e){
-                e.target.style.backgroundColor = "blue";
+                colorChoice = Math.floor(Math.random() * 3);
+                if(colorChoice == 0)
+                {
+                    e.target.style.backgroundColor = "red";
+                }
+                else if(colorChoice == 1)
+                {
+                    e.target.style.backgroundColor = "green";
+                }
+                else
+                {
+                    e.target.style.backgroundColor = "blue";
+                }
             })
         });
 

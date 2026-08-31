@@ -17,7 +17,6 @@ while(x < 16)
     grid.appendChild(col);
     x++;
 }
-black
 let columns = document.querySelectorAll(".col");
 
 while(y < 16)

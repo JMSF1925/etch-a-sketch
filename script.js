@@ -8,8 +8,8 @@ while(x < 16)
 {
     const col = document.createElement("div");
     col.classList.add("col");
-    col.style.height = "60px";
-    col.style.width = "60px";
+    col.style.height = "40px";
+    col.style.width = "40px";
     col.style.backgroundColor = "black";
     col.style.flex = "1";
     grid.appendChild(col);
@@ -24,8 +24,8 @@ while(y < 16)
     {
         const line = document.createElement("div");
         line.classList.add("line");
-        line.style.height = "60px";
-        line.style.width = "60px";
+        line.style.height = "40px";
+        line.style.width = "40px";
         line.style.backgroundColor = "black";
         line.style.flex = "1";
         columns.item(y).appendChild(line);
@@ -57,7 +57,7 @@ button.addEventListener("click", () => {
     z = 0;
     let squares = prompt("How many squares do you want in the grid (per side)?");
     let numericSquares = Number(squares);
-    let squareSize = Math.floor(960 / numericSquares);
+    let squareSize = Math.floor(640 / numericSquares);
     let strSize = squareSize.toString();
     
     if(Number.isInteger(numericSquares) && numericSquares <= 100)

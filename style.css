@@ -1,8 +1,8 @@
 #grid
 {
     display: flex;
-    max-width: 960px;
-    max-width: 960px;
+    max-width: 640px;
+    max-height: 640px;
 }
 
 button

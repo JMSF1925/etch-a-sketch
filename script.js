@@ -46,15 +46,15 @@ columns.forEach((item) => {
         colorChoice = Math.floor(Math.random() * 3);
         if(colorChoice == 0)
         {
-            e.target.style.backgroundColor = "red";
+            e.target.style.backgroundColor = "rgba(255, 0, 0, 10%)";
         }
         else if(colorChoice == 1)
         {
-            e.target.style.backgroundColor = "green";
+            e.target.style.backgroundColor = "rgba(0, 255, 0, 10%)";
         }
         else
         {
-            e.target.style.backgroundColor = "blue";
+            e.target.style.backgroundColor = "rgba(0, 0, 255, 10%)";
         }
     })
 });
@@ -64,15 +64,15 @@ lines.forEach((item) => {
         colorChoice = Math.floor(Math.random() * 3);
         if(colorChoice == 0)
         {
-            e.target.style.backgroundColor = "red";
+            e.target.style.backgroundColor = "rgba(255, 0, 0, 10%)";
         }
         else if(colorChoice == 1)
         {
-            e.target.style.backgroundColor = "green";
+            e.target.style.backgroundColor = "rgba(0, 255, 0, 10%)";
         }
         else
         {
-            e.target.style.backgroundColor = "blue";
+            e.target.style.backgroundColor = "rgba(0, 0, 255, 10%)";
         }
     })
 });
@@ -135,15 +135,15 @@ button.addEventListener("click", () => {
                 colorChoice = Math.floor(Math.random() * 3);
                 if(colorChoice == 0)
                 {
-                    e.target.style.backgroundColor = "red";
+                    e.target.style.backgroundColor = "rgba(255, 0, 0, 10%)";
                 }
                 else if(colorChoice == 1)
                 {
-                    e.target.style.backgroundColor = "green";
+                    e.target.style.backgroundColor = "rgba(0, 255, 0, 10%)";
                 }
                 else
                 {
-                    e.target.style.backgroundColor = "blue";
+                    e.target.style.backgroundColor = "rgba(0, 0, 255, 10%)";
                 }
             })
         });
@@ -153,15 +153,15 @@ button.addEventListener("click", () => {
                 colorChoice = Math.floor(Math.random() * 3);
                 if(colorChoice == 0)
                 {
-                    e.target.style.backgroundColor = "red";
+                    e.target.style.backgroundColor = "rgba(255, 0, 0, 10%)";
                 }
                 else if(colorChoice == 1)
                 {
-                    e.target.style.backgroundColor = "green";
+                    e.target.style.backgroundColor = "rgba(0, 255, 0, 10%)";
                 }
                 else
                 {
-                    e.target.style.backgroundColor = "blue";
+                    e.target.style.backgroundColor = "rgba(0, 0, 255, 10%)";
                 }
             })
         });
